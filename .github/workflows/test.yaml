@@ -1,0 +1,15 @@
+name: Test
+
+#run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # где запускаем
+    steps: # что делаем
+      - uses: actions/checkout@v3 # выкачиваем репозиторий
+      - uses: actions/setup-java@v3 # настраиваем java
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '17'
+      - run: ./gradlew clean test # запуск теста
