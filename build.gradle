@@ -1,9 +1,24 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.10.0'
 }
 
 group 'study.qa'
 version '1.0-SNAPSHOT'
+
+allure {
+    report { // секция отчёта
+        version.set("2.19.0")
+    }
+    adapter { // отвечает за появление папки build/allure-results
+        aspectjWeaver.set(true) // обработка аннотации @Step
+        frameworks {
+            junit5 { // название фреймворка
+                adapterVersion.set("2.19.0") // версия интеграции фреймворка и allure (в данном случае: allure-junit5)
+            }
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -11,12 +26,13 @@ repositories {
 
 dependencies {
     testImplementation (
-            'org.junit.jupiter:junit-jupiter-api:5.8.1',
-            'com.codeborne:selenide:6.11.0'
+            'org.junit.jupiter:junit-jupiter-api:5.9.0',
+            'com.codeborne:selenide:6.7.2',
+            'io.qameta.allure:allure-selenide:2.19.0',
+            'org.aspectj:aspectjweaver:1.9.8'
     )
     testRuntimeOnly (
-            'org.junit.jupiter:junit-jupiter-engine:5.8.1',
-            'org.slf4j:slf4j-simple:1.7.36'
+            'org.junit.jupiter:junit-jupiter-engine:5.9.0'
     )
 }
 

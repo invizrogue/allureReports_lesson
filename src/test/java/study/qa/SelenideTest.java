@@ -1,5 +1,7 @@
 package study.qa;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
@@ -10,8 +12,10 @@ public class SelenideTest {
 
     @Test
     public void testIssueSearch() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
         open("https://github.com");
-        $(".header-search-input").click();
+        $(".header-search-input_").click();
         $(".header-search-input").sendKeys("eroshenkoam/allure-example");
         $(".header-search-input").submit();
 
