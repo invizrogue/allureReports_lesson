@@ -2,5 +2,4 @@ target/
 build/
 .idea/
 .gradle/
-gradle/
-settings.gradle
+!gradle/wrapper/gradle-wrapper.jar
