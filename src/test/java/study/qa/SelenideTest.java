@@ -15,7 +15,7 @@ public class SelenideTest {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         open("https://github.com");
-        $(".header-search-input_").click();
+        $(".header-search-input").click();
         $(".header-search-input").sendKeys("eroshenkoam/allure-example");
         $(".header-search-input").submit();
 
