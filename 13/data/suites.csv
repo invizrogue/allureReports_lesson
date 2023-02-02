@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Feb 02 21:11:03 GMT 2023","Thu Feb 02 21:11:05 GMT 2023","2051","","study.qa.StepsTest","","study.qa.StepsTest","testAnnotatedStep","testAnnotatedStep()",""
+"passed","Thu Feb 02 21:10:58 GMT 2023","Thu Feb 02 21:10:58 GMT 2023","2","","study.qa.LambdaTest","","study.qa.LambdaTest","testDynamicLabels","Создание issue для авторизованного пользователя",""
+"passed","Thu Feb 02 21:11:05 GMT 2023","Thu Feb 02 21:11:07 GMT 2023","2027","","study.qa.StepsTest","","study.qa.StepsTest","testLambdaStep","testLambdaStep()",""
+"passed","Thu Feb 02 21:10:53 GMT 2023","Thu Feb 02 21:10:57 GMT 2023","3326","","study.qa.AttachmentsTest","","study.qa.AttachmentsTest","testLambdaAttachments","testLambdaAttachments()",""
+"passed","Thu Feb 02 21:10:58 GMT 2023","Thu Feb 02 21:11:03 GMT 2023","4177","","study.qa.SelenideTest","","study.qa.SelenideTest","testIssueSearch","testIssueSearch()",""
+"passed","Thu Feb 02 21:10:57 GMT 2023","Thu Feb 02 21:10:58 GMT 2023","1569","","study.qa.AttachmentsTest","","study.qa.AttachmentsTest","testAnnotatedAttachments","testAnnotatedAttachments()",""
+"passed","Thu Feb 02 21:10:58 GMT 2023","Thu Feb 02 21:10:58 GMT 2023","1","","study.qa.LambdaTest","","study.qa.LambdaTest","testStaticLabels","Создание issue для авторизованного пользователя",""
